@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+--primary: #351C75;
+--secondary: #C36EEA;
+--grey: #9E9E9E;
+}
+
+body {
+    font-family: Arial;
+    font-size: 120%;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#scores, #timer {
+    display: inline;
+}
+
+#timer {
+    float: right;
+}
+
+#wrapper {
+    margin-top: 80px;
+}
+
+#highscores-wrapper {
+    padding-top: 76px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.centered-btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.purple-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.purple-btn:hover {
+    background-color: var(--secondary);
+}
+
+.wide-btn {
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.smaller-btn {
+    padding: 5px 20px;
+}
+
+#feedback, .question-screen, .end-screen, #highscores-wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+p.feedback {
+    font-size: 150%;
+    font-style: italic;
+    color: var(--grey);
+    border-top: 2px solid var(--grey);
+    padding-top: 10px;
+}
+
+.btn-wrap {
+    width: fit-content;
+}
+
+.end-screen input {
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+/* Highlight the recently added score */
+li.new {
+    background-color: #D9D3E9;
+}
+
+ol.highscores {
+    /* Display numerals inside the li element */
+    list-style-position: inside;
+    padding: 0px;
+}
+
+li.highscore {
+    padding: 5px;
+}
+
+/* Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+    div.feedback, .question-screen, .end-screen, #highscores-wrapper {
+        width: 100%;
+    }
+}
