@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+header {
+    background-image: linear-gradient(to right, #3b6ec4 , #230455);
+    padding: 20px;
+}
+
+/* Class Styles */
+.absolute-position {
+    position: absolute;
+}
+
+.btn {
+    background-color: #B7B7B7;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: large;
+    cursor: pointer;
+}
+
+.blue-btn {
+    background-color: #5AA2E9;
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.col-2 {
+    flex: 0 0 calc(100% * 2 / 12);
+}
+
+.col-5 {
+    flex: 0 0 calc(100% * 5.75 / 12);
+}
+
+.col-6 {
+    flex: 0 0 calc(100% * 6 / 12);
+}
+
+.col-12 {
+    flex: 0 0 100%;
+}
+
+.dark-bg {
+    background-color: #33475A;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.lg-font-size {
+    font-size: large;
+}
+
+.m-10-0 {
+    margin: 10px 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-10-0 {
+    padding: 10px 0;
+}
+
+.p-20-0-10-0 {
+    padding: 20px 0 10px 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.white-font {
+    color: white;
+}
+
+/* Search Menu */
+#search-form {
+    border-bottom: 2px solid #676767;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#city-input {
+    border-radius: 5px;
+    border-width: 1.5px;
+    font-size: x-large;
+}
+
+#city-input:focus {
+    outline: none;
+}
+
+/* Results */
+#results {
+    padding: 20px;
+}
+
+#current {
+    border: 1px solid #000;
+}
+
+#city-name {
+    display: inline;
+    margin-bottom: 20px;
+}
+
+#uvi {
+    font-size: medium;
+    padding: 5px 20px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+#uvi.favorable {
+    background-color: green;
+    color: white;
+}
+
+#uvi.moderate {
+    background-color: yellow;
+}
+
+#uvi.severe {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .previous-search {
+        width: calc(50% - 20px);
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .col-sm-4 {
+      flex: 0 0 calc(100% * 4 / 12);
+    }
+
+    .col-sm-8 {
+      flex: 0 0 calc(100% * 8 / 12);
+    }
+}
+ 
+@media screen and (min-width: 970px) {
+    .col-lg-3 {
+      flex: 0 0 calc(100% * 3 / 12);
+    }
+  
+    .col-lg-9 {
+      flex: 0 0 calc(100% * 9 / 12);
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .col-xl-2 {
+      flex: 0 0 calc(100% * 2 / 12);
+    }
+}
