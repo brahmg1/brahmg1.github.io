@@ -90,13 +90,57 @@ content section {
 
 .my-work {
     background-color: lightgrey;
-    color: black;
-    display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     line-height: 1.5;
     align-items: flex-start;
+}
+
+.my-work h2 {
+    text-align: center;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.main-work {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.main-work h3 {
+    text-align: center;
+}
+
+.main-work img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border: 5px solid black;
+}
+
+.other-work {
+    justify-content: left;
+}
+
+.other-work img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border: 5px solid black;
+}
+
+.other-work h3 {
+    text-align: center;
 }
 
 .contact-me {
